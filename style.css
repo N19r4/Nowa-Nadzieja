@@ -1,0 +1,170 @@
+/*KOD USUWAJĄCY BANER CBA I LINK ZE STRONY*/
+div#top_10
+{
+display: none;
+}
+div.cbalink
+{
+display: none;
+}
+[style="text-align:center;font-size:11px;font-family:arial;background-color:black;color:white"]
+{
+display: none;
+}
+/*KOD USUWAJĄCY BANER CBA I LINK ZE STRONY*/
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.row
+{
+    display: flex;
+    flex-direction: column;
+}
+.main
+{
+    flex: 100%;
+}
+p.p_little
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+p.p_small
+{
+    font-size: 18px;
+    margin: 0 auto;
+    line-height: 1.4;
+    width: 60%;
+    text-align: center;
+}
+p.p_middle
+{
+    font-size: 22px;
+}
+p.p_big
+{
+    font-size: 27px;
+}
+h1
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2.h_middle
+{
+    text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+h2.h_small
+{
+    font-size: 23px;
+}
+.info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+#links
+{
+    display: flex;
+    flex-direction: column;
+}
+#links, #contact
+{
+    text-align: left;
+}
+.block > h2.h_middle, p.p_middle
+{
+    color: white;
+}
+.nav
+{
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: rgba(3,3,3,.5);
+}
+.nav > a
+{
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.blocks
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: blueviolet;
+}
+.block
+{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+.donate
+{
+    display: flex;
+    flex-direction: row;
+}
+.image
+{
+    flex: 80%;
+    background-image: url(ludzie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button
+{
+    box-sizing: content-box;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    width: 160px;
+    padding: 13px;
+    background-color: rgb(130, 126, 187);
+    cursor: pointer;
+}
+.button > a
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+}
+li
+{
+    list-style: none;
+    font-size: 30px;
+}
+.date
+{
+    color: blueviolet;
+}
+@media screen and (max-width: 740px)
+{
+    .nav
+    {
+        flex-direction: column;
+    }
+}
