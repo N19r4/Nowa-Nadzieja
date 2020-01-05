@@ -32,6 +32,16 @@ body
 {
     flex: 100%;
 }
+.title_page
+{
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    background-image: url(megafon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 p.p_little
 {
     display: flex;
@@ -49,6 +59,7 @@ p.p_small
 p.p_middle
 {
     font-size: 22px;
+    text-align: center;
 }
 p.p_big
 {
@@ -56,14 +67,22 @@ p.p_big
 }
 h1
 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    color: white;
     font-size: 50px;
     text-transform: uppercase;
+}
+h2.h_big
+{
     text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
 }
 h2.h_middle
 {
     text-align: center;
-    font-size: 55px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 h2.h_small
@@ -82,6 +101,18 @@ h2.h_small
 {
     display: flex;
     flex-direction: column;
+}
+#links  a
+{
+    text-decoration: none;
+    text-align: left;
+    line-height: 1.8;
+    transition-duration: .6s;
+    color: #000;
+}
+#links a:hover
+{
+    color: rgb(50, 42, 162);
 }
 #links, #contact
 {
@@ -102,11 +133,18 @@ h2.h_small
     justify-content: flex-end;
     background: rgba(3,3,3,.5);
 }
-.nav > a
+.nav a
 {
-    padding: 15px;
     text-align: center;
-    color: white;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+}
+.nav a:hover
+{
+    color: hotpink;
+    transition-duration: 0.4s;
 }
 .blocks
 {
@@ -127,9 +165,14 @@ h2.h_small
     display: flex;
     flex-direction: row;
 }
+.donate > .color_article
+{
+    flex: 60%;
+}
 .image
 {
-    flex: 80%;
+    width: 50%;
+    flex: 40%;
     background-image: url(ludzie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -152,19 +195,78 @@ h2.h_small
     text-transform: uppercase;
     
 }
+.button:hover
+{
+    background-color: rgb(86, 83, 129);
+    transition-duration: .4s;
+}
+.white_article
+{
+    padding: 20px;
+}
+.color_article
+{
+    padding: 20px;
+    color: #fff;
+    background-color: midnightblue;
+}
 li
 {
     list-style: none;
-    font-size: 30px;
+    font-size: 27px;
 }
 .date
 {
-    color: blueviolet;
+    font-size: 33px;
+    color: rgb(50, 42, 162);
 }
-@media screen and (max-width: 740px)
+.callendar ul 
+{
+list-style: none;
+    color: #333333;
+    font-size: 25px;
+    text-align: center;
+    margin: 70px 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+#join
+{
+    background-color: rgb(130, 126, 187);
+    cursor: pointer;
+}
+#join:hover
+{
+    color: black;
+}
+input
+{
+    width: 100%;
+    border-width: 0 0 7px 0;
+    border-bottom-color: rgb(50, 42, 162);
+}
+input:hover
+{
+    border-bottom-color: rgb(130, 126, 187);
+    transition-duration: .7s;
+}
+input:focus
+{
+    border-bottom-color: rgb(130, 126, 187);
+}
+.footer
+{
+    background-color: rgb(130, 126, 187);
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 11px;
+}
+@media screen and (max-width: 900px)
 {
     .nav
     {
         flex-direction: column;
+        align-items: 
     }
 }
