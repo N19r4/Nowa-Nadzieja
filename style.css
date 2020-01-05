@@ -68,10 +68,10 @@ p.p_little
 p.p_small
 {
     font-size: 18px;
-    margin: 0 auto;
+    margin: 20px auto;
     line-height: 1.4;
     width: 60%;
-    text-align: center;
+    text-align: left;
 }
 p.p_middle
 {
@@ -80,7 +80,13 @@ p.p_middle
 }
 p.p_big
 {
+    margin: 20px auto;
     font-size: 27px;
+    width: 60%;
+}
+#justify
+{
+    text-align: justify;
 }
 h1
 {
@@ -205,7 +211,6 @@ h2.h_small
 {
     width: 100%;
     height: 500px;
-    background-image: url(biuro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -272,7 +277,6 @@ li
 #join:hover
 {
     color: black;
-    font-size: 16px;
 }
 input
 {
@@ -295,7 +299,6 @@ input:focus
     width: 100%;
     color: white;
 }
-
 #account, #data, #contact h2
 {
     text-align: center;
