@@ -43,6 +43,17 @@ body
     background-size: cover;
     background-repeat: no-repeat;
 }
+.title
+{
+    flex: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: midnightblue;
+}
+.title > h1
+{
+    font-size: 80px;
+}
 div.little
 {
     display: flex;
@@ -78,12 +89,14 @@ h1
     color: white;
     font-size: 50px;
     text-transform: uppercase;
+    margin: 30px;
 }
 h2.h_big
 {
     text-align: center;
     font-size: 55px;
     text-transform: uppercase;
+    margin: 15px;
 }
 h2.h_middle
 {
@@ -107,6 +120,7 @@ h2.h_small
 {
     display: flex;
     flex-direction: column;
+    
 }
 #links  a
 {
@@ -116,6 +130,7 @@ h2.h_small
     transition-duration: .6s;
     color: #000;
     cursor: pointer;
+    
 }
 #links a:hover
 {
@@ -186,6 +201,15 @@ h2.h_small
     background-size: cover;
     background-repeat: no-repeat;
 }
+.big_image
+{
+    width: 100%;
+    height: 500px;
+    background-image: url(biuro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .button
 {
     box-sizing: content-box;
@@ -209,13 +233,12 @@ h2.h_small
 {
     background-color: rgb(86, 83, 129);
 }
-.white_article
+.white_article, .color_article, .callendar
 {
-    padding: 20px;
+    padding: 15px;
 }
 .color_article
 {
-    padding: 20px;
     color: #fff;
     background-color: midnightblue;
 }
@@ -231,11 +254,11 @@ li
 }
 .callendar ul 
 {
-list-style: none;
+    list-style: none;
     color: #333333;
     font-size: 25px;
     text-align: center;
-    margin: 70px 0;
+    margin: 30px 0;
     padding: 10px;
     line-height: 1.5;
 }
@@ -272,10 +295,23 @@ input:focus
     width: 100%;
     color: white;
 }
+
+#account, #data, #contact h2
+{
+    text-align: center;
+}
 @media screen and (max-width: 900px)
 {
     .nav, .info, .blocks, .donate
     {
         flex-direction: column;
+    }
+    h2.h_big
+    {
+        font-size: 35px;
+    }
+    .title
+    {
+        height: 500px;
     }
 }
