@@ -72,6 +72,7 @@ p.p_small
     line-height: 1.4;
     width: 60%;
     text-align: left;
+    white-space: pre-line;
 }
 p.p_middle
 {
@@ -113,6 +114,7 @@ h2.h_middle
 h2.h_small
 {
     font-size: 23px;
+    text-align: left;
 }
 .info
 {
@@ -122,13 +124,16 @@ h2.h_small
     width: 100%;
     padding: 20px;
 }
+#contact > h2.h_small
+{
+    text-align: left;
+}
 #links
 {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
-#links  a
+#links a
 {
     text-decoration: none;
     text-align: left;
@@ -170,14 +175,13 @@ h2.h_small
     text-decoration: none;
     font-size: 15px;
     padding: 15px;
-    transition-duration: .5s;
+    transition-duration: .3s;
     transition-timing-function: ease-in-out;
     cursor: pointer;
 }
 .nav a:hover
 {
     color: hotpink;
-    transition-duration: 0.4s;
 }
 .blocks
 {
@@ -212,7 +216,6 @@ h2.h_small
 }
 .image
 {
-    width: 50%;
     flex: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -291,18 +294,18 @@ li
     color: black;
     transform: scale(1.05);
 }
-input
+.info input
 {
     width: 100%;
     border-width: 0 0 7px 0;
     border-bottom-color: rgb(50, 42, 162);
 }
-input:hover
+.info input:hover
 {
     border-bottom-color: rgb(130, 126, 187);
     transition-duration: .7s;
 }
-input:focus
+.info input:focus
 {
     border-bottom-color: rgb(130, 126, 187);
 }
@@ -315,6 +318,32 @@ input:focus
 #account, #data, #contact h2
 {
     text-align: center;
+}
+form
+{
+    font-size: 17px;
+    margin: 0 auto;
+    width: 400px;
+}
+form label
+{
+    padding: 10px;
+    margin: 10px;
+}
+form > input
+{
+    padding: 10px;
+    width: 100%;
+    border-width: 0 0 7px 0;
+    border-bottom-color: rgb(50, 42, 162);
+    
+}
+.agree
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 @media screen and (max-width: 900px)
 {
@@ -333,5 +362,9 @@ input:focus
     .title
     {
         height: 500px;
+    }
+    .title > h1
+    {
+        font-size: 40px;
     }
 }

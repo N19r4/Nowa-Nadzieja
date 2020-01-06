@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Do Pobrania</title>
+		<title>Zostań Wolontariuszem</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type="text/css">
@@ -17,30 +17,41 @@
                 <a href="o_nas.html">o nas</a>
                 <a href="aktualno%C5%9Bci.html">aktualności</a>
                 <a href="misja.html">misja</a>
-                <a href="do_pobrania.html" style="color: hotpink;">do pobrania</a>
-                <a id="join" href="donate.html">zostań wolontariuszem</a>
+                <a href="do_pobrania.html">do pobrania</a>
+                <a id="join" href="donate.html" style="color: #000;">zostań wolontariuszem</a>
             </div>
-            <h1>do pobrania</h1>
+            <h1>zostań wolontariuszem</h1>
         </div>
             <div class="row">
             <div class="main">
-                <!--PLIKI DO POBRANIA-->
-                <div class="white_article">
-                    <p class="p_big">REGULAMIN Klubu Honorowych Dawców Krwi</p>
-                    <div class="button"><a href="REGULAMIN%20KLUBU%20Honorowych%20Dawc%C3%B3w%20Krwi.pdf">pobierz</a></div>
-                    <p class="p_big">Statut Fundacji</p>
-                    <div class="button"><a href="Statut%20Fundacji.pdf">pobierz</a></div>
-                    <p class="p_big">Strategia-2016-2020 (pdf)</p>
-                    <div class="button"><a href="Strategia-2016-2020.pdf">pobierz</a></div>
-                    <p class="p_big">Strategia-2016-2020 (docx)</p>
-                    <div class="button"><a href="Strategia-2016-2020.docx">pobierz</a></div>
-                </div>
-            <div class="donate">
-                    <span class="color_article"><h2 class="h_middle">dołącz do nas!</h2>
-                        <p class="p_middle">dajmy światu nową nadzieję</p>
-                        <div class="button"><a href="donate.html">dołącz</a></div></span>
-                    <span class="image" id="image_donate"></span>
-                </div>
+                <!--FORMULARZ-->
+                
+                    <span class="white_article">
+                        <h2 class="h_middle">formularz zgłoszeniowy</h2>
+                        <form name="become_a_volunteer">
+                        <label for="name">Podaj swoje imię:</label>
+                    <input type="text" name="name" maxlength="40" placeholder="Imię" id="name">
+                        <label for="surname">Podaj swoje nazwisko:</label>
+                    <input type="text" name="surname" maxlength="40" placeholder="Nazwisko" id="surname">
+                        <label for="email">Podaj swój email:</label>
+                    <input type="email" name="email" maxlength="40" placeholder="Email" id="email">
+                        <label for="tel">Podaj swój numer telefonu:</label>
+                    <input type="tel" name="tel" maxlength="40" placeholder="Telefon" id="tel">
+                        <label for="birthday">Podaj swoją datę urodzenia:</label>
+                            
+                    <input type="date" id="birthday">
+                    
+                    <div class="agree">
+                            <p class="p_little">
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych przez Fundację Nowa Nadzieja z siedzibą w Warszawie w celu związanym ze zgłoszniem wolontariatu i/lub wsparciem poprzez działanie lub fundusze akcji statutowych fundacji. Dane będą gromadzone i przetwarzane przez admistratorów fundacji.
+                            </p>
+                        <input type="checkbox">
+                    </div>
+                        </form>
+                    </span>
+                <div class="button"><a>wyślij</a></div>
+                
+            
                 <!--KONTAKT/NEWSLETTER/LINKI-->
                 <div class="info">
                     <span id="contact">
