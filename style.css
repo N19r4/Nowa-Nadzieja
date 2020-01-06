@@ -160,16 +160,19 @@ h2.h_small
     flex-direction: row;
     justify-content: flex-end;
     background: rgba(3,3,3,.5);
+    overflow: hidden;
 }
 .nav a
 {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+    text-decoration: none;
     font-size: 15px;
     padding: 15px;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
+    cursor: pointer;
 }
 .nav a:hover
 {
@@ -190,7 +193,7 @@ h2.h_small
     width: 100%;
     text-align: center;
 }
-.donate
+.donate, .image_and_text
 {
     display: flex;
     flex-direction: row;
@@ -199,11 +202,18 @@ h2.h_small
 {
     flex: 50%;
 }
+.image_and_text > .white_article
+{
+    flex: 50%;
+}
+#image_donate
+{
+    background-image: url(ludzie.jpg);
+}
 .image
 {
     width: 50%;
     flex: 50%;
-    background-image: url(ludzie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -237,6 +247,7 @@ h2.h_small
 .button:hover
 {
     background-color: rgb(86, 83, 129);
+    transform: scale(1.05);
 }
 .white_article, .color_article, .callendar
 {
@@ -269,6 +280,7 @@ li
 }
 #join
 {
+    
     background-color: rgb(130, 126, 187);
     cursor: pointer;
     transition-duration: .5s;
@@ -277,6 +289,7 @@ li
 #join:hover
 {
     color: black;
+    transform: scale(1.05);
 }
 input
 {
@@ -305,13 +318,17 @@ input:focus
 }
 @media screen and (max-width: 900px)
 {
-    .nav, .info, .blocks, .donate
+    .nav, .info, .blocks, .donate, .image_and_text
     {
         flex-direction: column;
     }
     h2.h_big
     {
         font-size: 35px;
+    }
+    .callendar > h2.h_big
+    {
+        
     }
     .title
     {
