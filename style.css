@@ -11,6 +11,10 @@ display: none;
 {
 display: none;
 }
+[style="position: fixed; text-align: center; width: auto; height: auto; max-width:100%; z-index: 9999; top: 10px;"]
+{
+display: none;
+}
 /*KOD USUWAJĄCY BANER CBA I LINK ZE STRONY*/
 *
 {
@@ -69,8 +73,8 @@ p.p_small
 {
     font-size: 18px;
     margin: 20px auto;
-    line-height: 1.4;
     width: 60%;
+    line-height: 1.4;
     text-align: left;
     white-space: pre-line;
 }
@@ -342,8 +346,18 @@ form > input
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+.agree > p
+{
+    flex: 80%;
+    white-space: pre-line;
+}
+.agree > input
+{
+    flex: 20%;
+    float: left;
 }
 @media screen and (max-width: 900px)
 {
@@ -353,18 +367,30 @@ form > input
     }
     h2.h_big
     {
-        font-size: 35px;
-    }
-    .callendar > h2.h_big
-    {
-        
+        font-size: 30px;
     }
     .title
     {
         height: 500px;
     }
+    .title_page h1
+    {
+        font-size: 9vw;
+    }
     .title > h1
     {
-        font-size: 40px;
+        font-size: 8.5vw;
+    }
+    p.p_small
+    {
+        width: 85%;
+    }
+    form p.p_little
+    {
+        font-size: 12px;
+    }
+    .agree
+    {
+        flex-direction: column;
     }
 }
