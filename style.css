@@ -342,22 +342,26 @@ form > input
     border-bottom-color: rgb(50, 42, 162);
     
 }
-.agree
+#logo
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    position: fixed;
+    z-index: 99;
+    opacity: 60%;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: white;
+    background-image: url(logo.png);
+    background-position: center;
+    background-size: cover;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
-.agree > p
+#logo:hover
 {
-    flex: 80%;
-    white-space: pre-line;
-}
-.agree > input
-{
-    flex: 20%;
-    float: left;
+    opacity: 100%;
 }
 @media screen and (max-width: 900px)
 {
@@ -388,9 +392,5 @@ form > input
     form p.p_little
     {
         font-size: 12px;
-    }
-    .agree
-    {
-        flex-direction: column;
     }
 }
