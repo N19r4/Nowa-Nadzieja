@@ -333,6 +333,8 @@ form label
 {
     padding: 10px;
     margin: 10px;
+    text-indent: 0;
+    font-family: Helvetica;
 }
 form > input
 {
@@ -340,7 +342,6 @@ form > input
     width: 100%;
     border-width: 0 0 7px 0;
     border-bottom-color: rgb(50, 42, 162);
-    
 }
 #logo
 {
@@ -392,5 +393,9 @@ form > input
     form p.p_little
     {
         font-size: 12px;
+    }
+    form
+    {
+        width: 70vw;
     }
 }
