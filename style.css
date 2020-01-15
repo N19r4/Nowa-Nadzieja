@@ -20,6 +20,10 @@ display: none;
 {
     box-sizing: border-box;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     font-family: sans-serif;
@@ -31,6 +35,7 @@ body
 {
     display: flex;
     flex-direction: column;
+    
 }
 .main
 {
@@ -92,6 +97,10 @@ p.p_big
 #justify
 {
     text-align: justify;
+}
+.title_page > h1
+{
+    font-size: 100px;
 }
 h1
 {
@@ -200,6 +209,18 @@ h2.h_small
     padding: 20px;
     width: 100%;
     text-align: center;
+}
+.blocks a
+{
+    text-decoration: none;
+    color: white;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    
+}
+.blocks a:hover
+{
+    color: #413c69;
 }
 .donate, .image_and_text
 {
@@ -360,6 +381,7 @@ form > input
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
+
 #logo:hover
 {
     opacity: 100%;
