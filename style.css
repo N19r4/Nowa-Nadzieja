@@ -311,8 +311,7 @@ li
     
     background-color: rgb(130, 126, 187);
     cursor: pointer;
-    transition-duration: .5s;
-    
+    transition-duration: .5s; 
 }
 #join:hover
 {
@@ -381,10 +380,15 @@ form > input
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
-
 #logo:hover
 {
     opacity: 100%;
+}
+#agree
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 @media screen and (max-width: 900px)
 {
