@@ -73,6 +73,8 @@ p.p_little
 {
     font-size: 15px;
     padding: 3px;
+    white-space: pre-line;
+    text-align: left;
 }
 p.p_small
 {
@@ -214,7 +216,7 @@ h2.h_small
 {
     text-decoration: none;
     color: white;
-    transition-duration: .2s;
+    transition-duration: .3s;
     transition-timing-function: ease-in-out;
     
 }
@@ -261,6 +263,7 @@ h2.h_small
     font-size: 18px;
     width: 160px;
     padding: 13px;
+    border-radius: 5px;
     background-color: rgb(130, 126, 187);
     cursor: pointer;
     transition-duration: .4s;
@@ -315,7 +318,7 @@ li
 }
 #join:hover
 {
-    color: black;
+    color: darkblue;
     transform: scale(1.05);
 }
 .info input
@@ -339,10 +342,7 @@ li
     width: 100%;
     color: white;
 }
-#account, #data, #contact h2
-{
-    text-align: center;
-}
+
 form
 {
     font-size: 17px;
@@ -423,5 +423,13 @@ form > input
     form
     {
         width: 70vw;
+    }
+    
+}
+@media screen and (max-width: 550px)
+{
+    h2.h_middle
+    {
+        font-size: 10vw;
     }
 }
