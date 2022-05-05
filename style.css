@@ -177,7 +177,7 @@ h2.h_small
     top: 0;
     left: 0;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background: rgba(3,3,3,.5);
     overflow: hidden;
 }
@@ -310,7 +310,7 @@ li
 }
 #join
 {
-    
+    margin-left: auto;
     background-color: rgb(130, 126, 187);
     cursor: pointer;
     transition-duration: .5s; 
@@ -354,6 +354,7 @@ form label
     margin: 10px;
     text-indent: 0;
     font-family: Helvetica;
+    font-size: 13px;
 }
 form > input
 {
@@ -423,12 +424,19 @@ form > input
     {
         width: 70vw;
     }
-    
+    #join
+    {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 550px)
 {
     h2.h_middle
     {
         font-size: 10vw;
+    }
+    #join
+    {
+        margin: 0;
     }
 }
